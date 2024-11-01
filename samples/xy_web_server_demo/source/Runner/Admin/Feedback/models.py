@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from .abstracts import MAFeedback
+from xy_django_app_feedback.abstracts import MAFeedback
 
 
 class MFeedback(MAFeedback):
@@ -14,4 +14,4 @@ class MFeedback(MAFeedback):
     class Meta:
         verbose_name = _("反馈")
         verbose_name_plural = _("反馈")
-        app_label = "xy_django_app_feedback"
+        app_label = "Feedback"

@@ -1,19 +1,18 @@
-from .models import *
+from .models import MFeedback
 from rest_framework import viewsets
-from xy_django_serializer.Serializer import *
+from xy_django_serializer.Serializer import Serializer
 
 
-# Serializers define the API representation.
-class xy_django_app_feedback_FeedbackSerializer(Serializer):
+class SFeedback(Serializer):
 
     default_value = ""
 
     class Meta:
-        model = Feedback
+        model = MFeedback
         fields = "__all__"
 
 
 # ViewSets define the view behavior.
-class xy_django_app_feedback_FeedbackViewSet(viewsets.ModelViewSet):
-    queryset = Feedback.objects.all()
-    serializer_class = xy_django_app_feedback_FeedbackSerializer
+class VSFeedback(viewsets.ModelViewSet):
+    queryset = MFeedback.objects.all()
+    serializer_class = SFeedback

@@ -1,28 +1,16 @@
-# -*- coding: utf-8 -*-
-import setuptools
+# -*- coding: UTF-8 -*-
+__author__ = "余洋"
+__doc__ = "setup"
+"""
+  * @File    :   setup.py
+  * @Time    :   2023/04/29 19:19:49
+  * @Author  :   helios
+  * @Version :   1.0
+  * @Contact :   yuyangit.0515@qq.com
+  * @License :   (C)Copyright 2019-2023, Ship of Ocean
+  * @Desc    :   None
+"""
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+from setuptools import setup
 
-setuptools.setup(
-    name="xy_django_app_feedback",  # 名称为以后pip安装包的名字，后面最好加上用户名，避免名称冲突
-    version="0.0.1",
-    author="helios",
-    author_email="yuyangit.0515@qq.com",
-    description="反馈模型",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="http://8.135.31.13:6402/beachstudio/opensource/xy/service/python/xy-web-service/library/xy_django_app/xy_django_app_feedback.git",
-    packages=setuptools.find_packages(),
-    include_package_data=True,
-    install_requires=[
-        "xy_django_serializer",
-        "xy_django_model",
-        "xy_django_app_resource",
-    ],
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-)
+setup()
