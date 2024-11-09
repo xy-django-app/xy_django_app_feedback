@@ -2,28 +2,27 @@
  * @Author: 余洋 yuyangit.0515@qq.com
  * @Date: 2024-10-18 13:02:22
  * @LastEditors: 余洋 yuyangit.0515@qq.com
- * @LastEditTime: 2024-10-23 20:52:11
- * @FilePath: /xy_django_app_feedback/readme/README_zh_CN.md
+ * @LastEditTime: 2024-10-23 20:51:56
+ * @FilePath: /xy_django_app_feedback/readme/README.zh-hant.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 # xy_django_app_feedback
 
-- [简体中文](README_zh_CN.md)
-- [繁体中文](README_zh_TW.md)
-- [English](README_en.md)
+- [简体中文](../README.md)
+- [繁體中文](README.zh-hant.md)
+- [English](README.en.md)
 
+## 說明
 
-## 说明
+通用回饋資料模型
 
-通用反馈数据模型.
+## 程式碼庫
 
-## 源码仓库
+- <a href="https://github.com/xy-django-app/xy_django_app_feedback.git" target="_blank">Github位址</a>  
+- <a href="https://gitee.com/xy-opensource/xy_django_app_feedback.git" target="_blank">Gitee位址</a>  
+- <a href="https://gitcode.com/xy-opensource/xy_django_app_feedback.git" target="_blank">GitCode位址</a>  
 
-- <a href="https://github.com/xy-django-app/xy_django_app_feedback.git" target="_blank">Github地址</a>  
-- <a href="https://gitee.com/xy-opensource/xy_django_app_feedback.git" target="_blank">Gitee地址</a>  
-- <a href="https://gitcode.com/xy-opensource/xy_django_app_feedback.git" target="_blank">GitCode地址</a>  
-
-## 安装
+## 安裝
 
 ```bash
 # bash
@@ -32,11 +31,12 @@ pip install xy_django_app_feedback
 
 ## 使用
 
+
 ##### 1. 直接引入
 
-- ###### 1. 设置全局配置
+- ###### 1. 設定全域配置
 
-在Django项目中的settings.py文件中加入如下配置
+在Django專案中的settings.py檔案中加入如下配置
 例如: [settings.py](../samples/xy_web_server_demo/source/Runner/Admin/xy_web_server_demo/settings.py)
 
 ```python
@@ -58,21 +58,22 @@ INSTALLED_APPS = [
 
 ```
 
-- ###### 2. 运行项目
+- ###### 2. 運行專案
 
 ```bash
 xy_web_server -w django makemigrations
 xy_web_server -w django migrate
 # 同步数据表
 xy_web_server -w django start
+
 # 启动工程后访问 http://127.0.0.1:8401/admin 验证信息管理系统
 ```
 
-##### 2. 自定义
+##### 2. 自訂
 
-- ###### 1. 创建Feedback模块
+- ###### 1. 建立Feedback模組
 
-> 操作 [样例工程](../samples/xy_web_server_demo/)
+> 操作 [範例工程](../samples/xy_web_server_demo/)
 
 ```bash
 # bash
@@ -80,9 +81,9 @@ xy_web_server -w django startapp Feedback
 # Feedback 模块创建在 source/Runner/Admin/Feedback 
 ```
 
-- ###### 2. 设置全局配置
+- ###### 2. 設定全域配置
 
-在Django项目中的settings.py文件中加入如下配置
+在Django專案中的settings.py檔案中加入如下配置
 例如: [settings.py](../samples/xy_web_server_demo/source/Runner/Admin/xy_web_server_demo/settings.py)
 
 ```python
@@ -104,7 +105,7 @@ INSTALLED_APPS = [
 
 ```
 
-- ###### 3. 在[Feedback](../samples/xy_web_server_demo/source/Runner/Admin/Feedback)模块的[models.py](../samples/xy_web_server_demo/source/Runner/Admin/Feedback/models.py)文件中加入如下代码
+- ###### 3. 在[Feedback](../samples/xy_web_server_demo/source/Runner/Admin/Feedback)模組的[models.py](../samples/xy_web_server_demo/source/Runner/Admin/Feedback/models.py)檔中加入如下程式碼
 
 ```python
 # models.py
@@ -128,7 +129,7 @@ class MFeedback(MAFeedback):
 
 ```
 
-- ###### 4. 在[Feedback](../samples/xy_web_server_demo/source/Runner/Admin/Feedback)模块的[admin.py](../samples/xy_web_server_demo/source/Runner/Admin/Feedback/admin.py)文件中加入如下代码
+- ###### 4. 在[Feedback](../samples/xy_web_server_demo/source/Runner/Admin/Feedback)模組的[admin.py](../samples/xy_web_server_demo/source/Runner/Admin/Feedback/admin.py)檔中加入如下程式碼
 
 ```python
 # admin.py
@@ -143,37 +144,37 @@ class FeedbackAdmin(admin.ModelAdmin):
 
 ```
 
-- ###### 5. 运行项目
+- ###### 5. 運行專案
 
 ```bash
 xy_web_server -w django makemigrations
 xy_web_server -w django migrate
 # 同步数据表
 xy_web_server -w django start
+
 # 启动工程后访问 http://127.0.0.1:8401/admin 验证账户管理系统
 ```
 
-##### 运行 [样例工程](../samples/xy_web_server_demo)
 
-> 样例工程具体使用方式请移步 <b style="color: blue">xy_web_server.git</b> 下列仓库
-> - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github地址</a>  
-> - <a href="https://gitee.com/xy-opensource/xy_web_server.git" target="_blank">Gitee地址</a>  
-> - <a href="https://gitcode.com/xy-opensource/xy_web_server.git" target="_blank">GitCode地址</a>  
+##### 運轉 [範例工程](../samples/xy_web_server_demo)
 
+> 範例工程具體使用方式請移步 <b style="color: blue">xy_web_server.git</b> 下列倉庫
+> - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github位址</a>  
+> - <a href="https://gitee.com/xy-opensource/xy_web_server.git" target="_blank">Gitee位址</a>  
+> - <a href="https://gitcode.com/xy-opensource/xy_web_server.git" target="_blank">GitCode位址</a>  
 
-## 许可证
-xy_django_app_feedback 根据 <木兰宽松许可证, 第2版> 获得许可。有关详细信息，请参阅 [LICENSE](../LICENSE) 文件。
+## 許可證
+xy_django_app_feedback 根據 <木蘭寬鬆許可證, 第2版> 獲得許可。有關詳細信息，請參閱 [LICENSE](../LICENSE) 文件。
 
-## 捐赠
+## 捐贈
 
-如果小伙伴们觉得这些工具还不错的话，能否请咱喝一杯咖啡呢?  
+如果小夥伴們覺得這些工具還不錯的話，能否請咱喝一杯咖啡呢?  
 
 ![Pay-Total](./Pay-Total.png)
 
-
-## 联系方式
+## 聯繫方式
 
 ```
 微信: yuyangiit
-邮箱: yuyangit.0515@qq.com
+郵箱: yuyangit.0515@qq.com
 ```
