@@ -8,9 +8,8 @@
 -->
 # xy_django_app_feedback
 
-- [简体中文](../README.md)
-- [繁體中文](README.zh-hant.md)
-- [English](README.en.md)
+| [简体中文](../README.md)         | [繁體中文](./README.zh-hant.md)        |                      [English](./README.en.md)          |
+| ----------- | -------------|---------------------------------------|
 
 ## Description
 
@@ -18,9 +17,9 @@ Common feedback data model.
 
 ## Source Code Repositories
 
-- <a href="https://github.com/xy-django-app/xy_django_app_feedback.git" target="_blank">Github</a>  
-- <a href="https://gitee.com/xy-opensource/xy_django_app_feedback.git" target="_blank">Gitee</a>  
-- <a href="https://gitcode.com/xy-opensource/xy_django_app_feedback.git" target="_blank">GitCode</a>  
+| [Github](https://github.com/xy-django-app/xy_django_app_feedback.git)         | [Gitee](https://gitee.com/xy-opensource/xy_django_app_feedback.git)        |                      [GitCode](https://gitcode.com/xy-opensource/xy_django_app_feedback.git)          |
+| ----------- | -------------|---------------------------------------|
+
 
 ## Installation
 
@@ -159,9 +158,10 @@ xy_web_server -w django start
 ##### Run [Sample Project](../samples/xy_web_server_demo)
 
 > For detailed usage of the sample project, please go to the following repository <b style="color: blue">xy_web_server.git</b> 
-> - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github</a>  
-> - <a href="https://gitee.com/xy-opensource/xy_web_server.git" target="_blank">Gitee</a>  
-> - <a href="https://gitcode.com/xy-opensource/xy_web_server" target="_blank">GitCode</a>  
+
+| [Github](https://github.com/xy-web-service/xy_web_server.git)         | [Gitee](https://gitee.com/xy-opensource/xy_web_server.git)        |                      [GitCode](https://gitcode.com/xy-opensource/xy_web_server.git)          |
+| ----------- | -------------|---------------------------------------|
+
 
 ## License
 xy_django_app_feedback is licensed under the <Mulan Permissive Software License，Version 2>. See the [LICENSE](../LICENSE) file for more info.
